@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oak & Stone Renovations - Thoughtful residential renovations, extensions and interior transformations across Northamptonshire, UK.">
+    <meta name="keywords" content="renovations, extensions, Northamptonshire, residential renovation, kitchen, bathroom, home improvement">
+    <meta name="author" content="Oak & Stone Renovations">
+    <title>Oak & Stone Renovations | Northamptonshire</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__brand">
+                <span class="header__brand--main">Oak & Stone</span>
+                <span class="header__brand--sub">RENOVATIONS</span>
+            </div>
+            <nav class="header__nav">
+                <a href="#home" class="header__nav-link">Home</a>
+                <a href="#services" class="header__nav-link">Services</a>
+                <a href="#projects" class="header__nav-link">Our Work</a>
+                <a href="#about" class="header__nav-link">About</a>
+                <a href="#contact" class="header__nav-link">Contact</a>
+            </nav>
+            <button class="header__cta" onclick="openContactModal()">Request a Consultation →</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Beautiful renovated British home with rear extension" loading="eager">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 class="hero__headline">
+                Homes made<br>
+                <em>for living well.</em>
+            </h1>
+            <p class="hero__text">
+                Thoughtful extensions, renovations and interior transformations, designed around the way you actually live.
+            </p>
+            <div class="hero__cta">
+                <button class="btn btn--primary" onclick="openContactModal()">Discuss Your Project →</button>
+                <a href="#projects" class="btn btn--secondary">Explore Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro__inner">
+            <span class="intro__label">OAK & STONE RENOVATIONS</span>
+            <div class="intro__grid">
+                <div class="intro__statement">
+                    <h2>We don't just improve houses.<br>We create homes that work better.</h2>
+                </div>
+                <div class="intro__copy">
+                    <p>From opening up a tired ground floor to building the extra space your family has outgrown, we approach every project with the same aim: thoughtful design, careful workmanship and a result that feels completely at home.</p>
+                    <a href="#about" class="link link--arrow">Our approach →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects__inner">
+            <span class="projects__label">SELECTED PROJECTS</span>
+            <h2 class="projects__heading">Spaces we've transformed.</h2>
+            
+            <!-- Project 01 -->
+            <div class="project project--large">
+                <div class="project__image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" alt="The Garden Room - open plan kitchen and living space" loading="lazy">
+                </div>
+                <div class="project__content">
+                    <span class="project__location">Harpenden</span>
+                    <h3 class="project__title">The Garden Room</h3>
+                    <p class="project__scope">Rear extension · Kitchen · Interior renovation</p>
+                    <p class="project__description">A dark, divided ground floor opened into a warm, light-filled family space, connecting the original house naturally with the garden.</p>
+                    <a href="#" class="link link--arrow">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 02 -->
+            <div class="project project--medium">
+                <div class="project__image">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" alt="The Old Rectory - period renovation" loading="lazy">
+                </div>
+                <div class="project__content">
+                    <span class="project__location">Northamptonshire</span>
+                    <h3 class="project__title">The Old Rectory</h3>
+                    <p class="project__scope">Whole-home renovation · Joinery · Bathrooms</p>
+                    <p class="project__description">A careful renovation balancing the character of the original property with calmer, more practical contemporary spaces.</p>
+                    <a href="#" class="link link--arrow">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project project--wide">
+                <div class="project__image">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80" alt="Ashwood House - modern extension" loading="lazy">
+                </div>
+                <div class="project__content">
+                    <span class="project__location">Towcester</span>
+                    <h3 class="project__title">Ashwood House</h3>
+                    <p class="project__scope">Extension · Kitchen · Utility</p>
+                    <p class="project__description">More room where it mattered most — creating an open kitchen and living space without losing the intimacy of the original home.</p>
+                    <a href="#" class="link link--arrow">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services__inner">
+            <span class="services__label">WHAT WE DO</span>
+            <h2 class="services__heading">Considered renovation,<br>from first idea to final detail.</h2>
+            <p class="services__intro">Whether you're reworking a single room or changing the way your entire home functions, we bring the same level of care to every stage.</p>
+            
+            <div class="services__grid">
+                <div class="service">
+                    <span class="service__number">01</span>
+                    <h3 class="service__title">Extensions</h3>
+                    <p class="service__description">Beautiful additional space designed to feel like it has always belonged to your home.</p>
+                </div>
+                <div class="service">
+                    <span class="service__number">02</span>
+                    <h3 class="service__title">Whole-home renovations</h3>
+                    <p class="service__description">Thoughtful transformations for homes that need more than a cosmetic update.</p>
+                </div>
+                <div class="service">
+                    <span class="service__number">03</span>
+                    <h3 class="service__title">Kitchens & living spaces</h3>
+                    <p class="service__description">Practical, welcoming spaces built around cooking, gathering and everyday life.</p>
+                </div>
+                <div class="service">
+                    <span class="service__number">04</span>
+                    <h3 class="service__title">Bathrooms & interiors</h3>
+                    <p class="service__description">Carefully finished rooms where materials, proportion and detail make the difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Image Break -->
+    <section class="featured">
+        <div class="featured__image">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80" alt="Featured kitchen extension with garden views" loading="lazy">
+        </div>
+        <div class="featured__content">
+            <span class="featured__label">THE GARDEN ROOM</span>
+            <h3 class="featured__title">Light, space and a better connection to the garden.</h3>
+            <a href="#" class="link link--arrow">View the project →</a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="process__inner">
+            <span class="process__label">HOW WE WORK</span>
+            <h2 class="process__heading">A clear process.<br>No unnecessary complexity.</h2>
+            
+            <div class="process__stages">
+                <div class="stage">
+                    <span class="stage__number">01 — Conversation</span>
+                    <p class="stage__description">We start with your home, what isn't working and what you'd like to change.</p>
+                </div>
+                <div class="stage">
+                    <span class="stage__number">02 — Design & planning</span>
+                    <p class="stage__description">We shape the brief, define the details and make sure everyone knows exactly what is being built.</p>
+                </div>
+                <div class="stage">
+                    <span class="stage__number">03 — Build</span>
+                    <p class="stage__description">Your project is managed carefully, with clear communication throughout.</p>
+                </div>
+                <div class="stage">
+                    <span class="stage__number">04 — Handover</span>
+                    <p class="stage__description">We finish properly, walk through every detail with you and leave you with a home ready to enjoy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy / About Section -->
+    <section class="philosophy" id="about">
+        <div class="philosophy__inner">
+            <div class="philosophy__image">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Craftsman working with timber joinery" loading="lazy">
+            </div>
+            <div class="philosophy__content">
+                <span class="philosophy__label">OUR APPROACH</span>
+                <h2 class="philosophy__heading">Good renovation should feel inevitable.</h2>
+                <p class="philosophy__text">The best changes don't fight the character of a home. They make it easier to understand.</p>
+                <p class="philosophy__text">At Oak & Stone, we balance practical thinking with careful detailing — respecting what's already there while creating spaces better suited to the people living in them.</p>
+                <p class="philosophy__text">That means honest conversations, considered decisions and craftsmanship that still looks right years after we've left.</p>
+                <a href="#" class="link link--arrow">More about Oak & Stone →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial__inner">
+            <blockquote class="testimonial__quote">
+                "From the first conversation, they understood that we didn't simply want a bigger house — we wanted the existing house to finally work for us."
+            </blockquote>
+            <p class="testimonial__author">— Sarah & James<br><span class="testimonial__project">The Garden Room, Harpenden</span></p>
+            <a href="#" class="link link--arrow">Read the project story →</a>
+        </div>
+    </section>
+
+    <!-- Local Positioning Section -->
+    <section class="local">
+        <div class="local__inner">
+            <span class="local__label">BASED IN NORTHAMPTONSHIRE</span>
+            <h2 class="local__heading">Local knowledge.<br>Beautiful work.</h2>
+            <p class="local__text">We undertake residential renovation projects across Northamptonshire and selected surrounding areas, working with homeowners who care about how their home looks, feels and functions.</p>
+            <p class="local__areas">Northampton · Towcester · Wellingborough · Kettering · Daventry · Market Harborough<br>and surrounding areas</p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta__image">
+            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1920&q=80" alt="Beautiful contemporary home exterior" loading="lazy">
+        </div>
+        <div class="cta__overlay"></div>
+        <div class="cta__content">
+            <span class="cta__label">PLANNING A PROJECT?</span>
+            <h2 class="cta__heading">Let's make more<br>of your home.</h2>
+            <p class="cta__text">Tell us what you're thinking about. We'll arrange an initial conversation and explore what's possible.</p>
+            <div class="cta__actions">
+                <button class="btn btn--primary btn--large" onclick="openContactModal()">Discuss Your Project →</button>
+                <a href="mailto:hello@oakandstone.co.uk" class="cta__email">hello@oakandstone.co.uk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <span class="footer__brand--main">OAK & STONE</span>
+                <span class="footer__brand--sub">RENOVATIONS</span>
+                <p class="footer__tagline">Thoughtful residential renovation across Northamptonshire.</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column">
+                    <h4 class="footer__heading">Services</h4>
+                    <a href="#services" class="footer__link">Extensions</a>
+                    <a href="#services" class="footer__link">Renovations</a>
+                    <a href="#services" class="footer__link">Kitchens & Living</a>
+                    <a href="#services" class="footer__link">Bathrooms & Interiors</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__heading">Our Work</h4>
+                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__location">Northamptonshire, UK</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">Houzz</a>
+                </div>
+                <p class="footer__copyright">© 2026 Oak & Stone Renovations</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal__overlay" onclick="closeContactModal()"></div>
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeContactModal()">×</button>
+            <h2 class="modal__heading">Discuss Your Project</h2>
+            <p class="modal__intro">Tell us what you're thinking about. We'll arrange an initial conversation and explore what's possible.</p>
+            
+            <form class="enquiry-form" id="enquiryForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Northampton">
+                </div>
+                <div class="form-group">
+                    <label for="projectType">What are you considering?</label>
+                    <select id="projectType" name="projectType" required>
+                        <option value="">Select an option</option>
+                        <option value="extension">Extension</option>
+                        <option value="renovation">Whole-home renovation</option>
+                        <option value="kitchen">Kitchen / living space</option>
+                        <option value="bathroom">Bathroom / interiors</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Approximate project budget</label>
+                    <select id="budget" name="budget">
+                        <option value="">Select an option</option>
+                        <option value="under25k">Under £25k</option>
+                        <option value="25k-50k">£25k–£50k</option>
+                        <option value="50k-100k">£50k–£100k</option>
+                        <option value="100k+">£100k+</option>
+                        <option value="notsure">Not sure yet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your project</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contactMethod">Preferred contact method</label>
+                    <select id="contactMethod" name="contactMethod">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Send Enquiry →</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
